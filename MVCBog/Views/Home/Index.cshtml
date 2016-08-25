@@ -1,17 +1,17 @@
 ﻿@{ViewBag.Title = "Home";}
-@model  List<MVCBog.Models.Post>
-@foreach (var post in Model)
+@model  List<MVCBog.Models.Ads>
+@foreach (var ads in Model)
 
 {
     <section class="row">
         <article class="post col-md-6">
-            <h2><a href="/Posts/Details/@post.Id">@MVCBog.Classes.Utils.CutText(post.Title, 30)</a></h2>
+            <h2><a href="/Ads/Details/@ads.Id">@MVCBog.Classes.Utils.CutText(ads.Title, 30)</a></h2>
             <div>
-                Postetd on <i>@post.Date</i>
-                @if (post.Author != null)
+                Postetd on <i>@ads.Date</i>
+                @if (ads.Author != null)
                 {
-                    @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
-                    <p>@Html.Raw(@MVCBog.Classes.Utils.CutText(post.Body))</p>
+                    @:by <i>@ads.Author.FullName (@ads.Author.UserName)</i>
+                    <p>@Html.Raw(@MVCBog.Classes.Utils.CutText(ads.Body))</p>
                 }
             </div>
         </article>
