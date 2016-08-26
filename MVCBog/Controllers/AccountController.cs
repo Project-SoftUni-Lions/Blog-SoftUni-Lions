@@ -80,7 +80,7 @@ namespace MVCBog.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    this.AddNotification("login successful", NotificationType.SUCCESS);
+                    this.AddNotification("Успешно влизане", NotificationType.SUCCESS);
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                    return View("Lockout");
@@ -131,7 +131,7 @@ namespace MVCBog.Controllers
                     return View("Lockout");
                 case SignInStatus.Failure:
                 default:
-                    ModelState.AddModelError("", "Invalid code.");
+                    ModelState.AddModelError("", "Грешен код");
                     return View(model);
             }
         }
@@ -165,12 +165,12 @@ namespace MVCBog.Controllers
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-                    this.AddNotification("Successful registration", NotificationType.SUCCESS);
+                    this.AddNotification("Вие се регистрирахте успешно", NotificationType.SUCCESS);
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
             }
-            this.AddNotification("Registration failed!", NotificationType.ERROR);
+            this.AddNotification("Неуспешна регистрация!", NotificationType.ERROR);
             // If we got this far, something failed, redisplay form
             return View(model);
         }
@@ -395,7 +395,7 @@ namespace MVCBog.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            this.AddNotification("logout successful", NotificationType.SUCCESS);
+            this.AddNotification("Вие излезнахте успешно", NotificationType.SUCCESS);
             return RedirectToAction("Index", "Home");
         }
 
