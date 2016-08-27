@@ -87,11 +87,7 @@
             @Html.ActionLink("Виж повече", "Details", new { id = item.Id })
             @if (User.IsInRole("Administrators"))
             {
-<<<<<<< HEAD:MVCBog/Views/Ads/Index.cshtml
                 @:| @Html.ActionLink("Изтрий", "Delete", new { id = item.Id })
-=======
-                @:| @Html.ActionLink("Delete", "Delete", new { id = item.Id })
->>>>>>> origin/master:MVCBog/Views/Ads/Index.cshtml
             }
         </td>
     

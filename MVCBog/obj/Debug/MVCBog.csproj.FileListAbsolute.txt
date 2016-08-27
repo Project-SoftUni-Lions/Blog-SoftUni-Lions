@@ -243,7 +243,6 @@ E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Secur
 E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.dll
 E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.pdb
 E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.csprojResolveAssemblyReference.cache
-<<<<<<< HEAD
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\ApplicationInsights.config
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\roslyn\csc.exe
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -325,5 +324,3 @@ C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\Microsof
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\obj\Debug\MVCBog.dll
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\obj\Debug\MVCBog.pdb
-=======
->>>>>>> origin/master
