@@ -15,11 +15,36 @@ namespace MVCBog.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
+
+
         // GET: Posts
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
             var ads = db.Ads.Include(p => p.Author).ToList();
             return View(db.Ads.Include(p=>p.Author).ToList());
+
+            var ads2 = from m in db.Ads
+                      select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                ads2 = ads2.Where(s => s.Title.Contains(searchString));
+            }
+
+            return View(ads2);
+        }
+
+        public ActionResult Search(string searchString)
+        {
+            var ads = from m in db.Ads
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                ads = ads.Where(s => s.Title.Contains(searchString));
+            }
+
+            return View(ads);
         }
 
         // GET: Posts/Details/5

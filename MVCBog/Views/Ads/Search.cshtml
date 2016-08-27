@@ -1,0 +1,95 @@
+﻿@model IEnumerable<MVCBog.Models.Ads>
+
+@{
+    ViewBag.Title = "Обяви";
+}
+
+<h2>Обяви</h2>
+
+<p>
+    @Html.ActionLink("Създай нова обява", "Create")
+</p>
+
+<p>
+   
+
+    @using (Html.BeginForm())
+    {
+    <p>
+        Търсачка: @Html.TextBox("SearchString") <br />
+        <input type="submit" value="Търси" />
+    </p>
+    }
+    </p>
+@foreach (var item in Model)
+{
+<table class="table">
+    <tr>
+        
+        <th><h4><b>@Html.DisplayFor(modelItem => item.Title)</b></h4></th>
+        </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Body)
+        </th>
+        <td>
+            @MVCBog.Classes.Utils.CutText(item.Body)
+        </td>
+     </tr>
+
+    <tr>
+
+    
+        <th>
+            @Html.DisplayNameFor(model => model.Author.FullName)
+        </th>
+        <td>
+            @if (item.Author == null)
+            {
+                <i>No Author</i>
+            }
+            @Html.DisplayFor(modelItem => item.Author.FullName)
+        </td>
+
+    </tr>
+
+
+        @*<th>
+                @Html.DisplayNameFor(model => model.CommentsCount)
+            </th>*@
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+
+        </tr>
+        
+            
+    <tr>
+   
+        <td>
+            @if (User.IsInRole("Administrators"))
+            {
+                @Html.ActionLink("Редактирай", "Edit", new { id = item.Id }) @:|
+            }
+            @Html.ActionLink("Виж повече", "Details", new { id = item.Id })
+            @if (User.IsInRole("Administrators"))
+            {
+                @:| @Html.ActionLink("Изтрий", "Delete", new { id = item.Id })
+            }
+        </td>
+    
+    </tr>
+</table>
+}
