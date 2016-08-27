@@ -7,7 +7,7 @@
 <h2>Обяви</h2>
 
 <p>
-    @Html.ActionLink("Създай нова", "Create")
+    @Html.ActionLink("Създай нова обява", "Create")
 </p>
 
 
@@ -20,18 +20,15 @@
         </tr>
     <tr>
         <th>
-            Заглавие
-            @*@Html.DisplayNameFor(model => model.Заглавие)*@
+            @Html.DisplayNameFor(model => model.Title)
         </th>
         <td>
-            
             @Html.DisplayFor(modelItem => item.Title)
         </td>
     </tr>
     <tr>
         <th>
-            Допълнителна информация
-            @*@Html.DisplayNameFor(model => model.Body)*@
+            @Html.DisplayNameFor(model => model.Body)
         </th>
         <td>
             @MVCBog.Classes.Utils.CutText(item.Body)
@@ -42,13 +39,12 @@
 
     
         <th>
-            Име
-            @*@Html.DisplayNameFor(model => model.Author.FullName)*@
+            @Html.DisplayNameFor(model => model.Author.FullName)
         </th>
         <td>
             @if (item.Author == null)
             {
-                <i>Няма автор</i>
+                <i>No Author</i>
             }
             @Html.DisplayFor(modelItem => item.Author.FullName)
         </td>
@@ -57,13 +53,12 @@
 
     <tr>
         <th>
-            Телефон
-            @*@Html.DisplayNameFor(model => model.Author.PhoneNumber)*@
+            @Html.DisplayNameFor(model => model.Author.PhoneNumber)
         </th>
         <td>
             @if (item.Author.PhoneNumber == null)
             {
-                <i>Няма тлефонен номер</i>
+                <i>No PhoneNumber</i>
             }
             @Html.DisplayFor(modelItem => item.Author.PhoneNumber)
         </td>
@@ -73,8 +68,7 @@
             </th>*@
     <tr>
         <th>
-            Дата на публикуване
-            @*@Html.DisplayNameFor(model => model.Date)*@
+            @Html.DisplayNameFor(model => model.Date)
         </th>
         <td>
             @Html.DisplayFor(modelItem => item.Date)
@@ -88,16 +82,12 @@
         <td>
             @if (User.IsInRole("Administrators"))
             {
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) @:|
+                @Html.ActionLink("Редактирай", "Edit", new { id = item.Id }) @:|
             }
             @Html.ActionLink("Виж повече", "Details", new { id = item.Id })
             @if (User.IsInRole("Administrators"))
             {
-<<<<<<< HEAD
                 @:| @Html.ActionLink("Изтрий", "Delete", new { id = item.Id })
-=======
-                @:| @Html.ActionLink("Delete", "Delete", new { id = item.Id })
->>>>>>> origin/master
             }
         </td>
     
