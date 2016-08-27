@@ -1,17 +1,22 @@
 ﻿@model MVCBog.Models.Ads
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Виж повече";
+=======
+    ViewBag.Title = "Погледни повече";
+>>>>>>> origin/master
 }
 
-<h2>Details</h2>
+<h2>Детайли по обявата</h2>
 
 <div>
-    <h4>Post</h4>
+    @*<h4>POST</h4>*@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Title)
+            Заглавие
+            @*@Html.DisplayNameFor(model => model.Title)*@
         </dt>
 
         <dd>
@@ -19,7 +24,8 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Body)
+            Допълнителна информация
+            @*@Html.DisplayNameFor(model => model.Body)*@
         </dt>
 
         <dd>
@@ -27,7 +33,8 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Date)
+            Дата на публикуване 
+            @*@Html.DisplayNameFor(model => model.Date)*@
         </dt>
 
         <dd>
@@ -39,7 +46,7 @@
 <p>
     @if (User.IsInRole("Administrators"))
     {
-        @Html.ActionLink("Редактирай", "Edit", new { id = Model.Id }) @:|
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) @:|
     }
     @Html.ActionLink("Върни се обратно", "Index")
 </p>

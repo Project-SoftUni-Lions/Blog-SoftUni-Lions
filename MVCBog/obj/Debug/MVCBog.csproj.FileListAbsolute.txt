@@ -243,6 +243,7 @@ E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Secur
 E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.dll
 E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.pdb
 E:\Project\Blog-SoftUni-Lions\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\ApplicationInsights.config
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\roslyn\csc.exe
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -324,3 +325,169 @@ C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\Microsof
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\obj\Debug\MVCBog.dll
 C:\Users\Martin\Desktop\New folder\Blog-SoftUni-Lions-master\MVCBog\obj\Debug\MVCBog.pdb
+=======
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\ApplicationInsights.config
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\csc.exe
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\vbc.exe
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\MVCBog.dll.config
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\MVCBog.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\MVCBog.pdb
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Antlr3.Runtime.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.SqlServer.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.Web.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Newtonsoft.Json.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Owin.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Helpers.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Mvc.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Optimization.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Razor.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Razor.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\WebGrease.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.Web.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Helpers.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Mvc.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Optimization.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Razor.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Razor.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Antlr3.Runtime.pdb
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Newtonsoft.Json.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.SqlServer.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.csprojResolveAssemblyReference.cache
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.dll
+C:\Users\Rado\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.pdb
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\ApplicationInsights.config
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\csc.exe
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\vbc.exe
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\MVCBog.dll.config
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\MVCBog.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\MVCBog.pdb
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Antlr3.Runtime.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.SqlServer.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.Web.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Newtonsoft.Json.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Owin.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Helpers.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Mvc.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Optimization.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Razor.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\WebGrease.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.Web.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Helpers.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Mvc.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Optimization.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.Razor.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Antlr3.Runtime.pdb
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Newtonsoft.Json.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\EntityFramework.SqlServer.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.csprojResolveAssemblyReference.cache
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.dll
+C:\Users\Kiko - PC\Desktop\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.pdb
+>>>>>>> origin/master
