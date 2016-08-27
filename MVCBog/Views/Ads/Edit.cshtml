@@ -4,7 +4,7 @@
     ViewBag.Title = "Промени обява";
 }
 
-<h2>Edit</h2>
+<h2>Редактирай обявата</h2>
 
 
 @using (Html.BeginForm())
@@ -12,7 +12,7 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Post</h4>
+        @*<h4>Post</h4>*@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.Id)
@@ -44,7 +44,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Запиши" class="btn btn-default" />
+                <input type="submit" value="Запиши промените" class="btn btn-default" />
             </div>
         </div>
     </div>

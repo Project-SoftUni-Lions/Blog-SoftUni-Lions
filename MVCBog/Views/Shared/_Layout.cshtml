@@ -23,7 +23,7 @@
                 <ul class="nav navbar-nav">
                     @*<li>@Html.ActionLink("Начало", "Index", "Home")</li>*@
                     <li>@Html.ActionLink("Обяви", "Index", "Ads")</li>
-                    <li>@Html.ActionLink("Нова обява", "Create", "Ads")</li>
+                    <li>@Html.ActionLink("Публикувай нова обява", "Create", "Ads")</li>
                     <li>@Html.ActionLink("Търсене", "index", "Search")</li>
                     <li>@Html.ActionLink("Анкета", "index", "Poll")</li>
                     <li>@Html.ActionLink("За нас", "index", "Aboutus")</li>
@@ -37,6 +37,18 @@
     @Html.Partial("_Notifications")
     @RenderBody()
     <hr/>
+    <div>Брой уникални потребители на сайта</div>
+    <!-- hitwebcounter Code START -->
+    <a href="http://www.hitwebcounter.com" target="_blank">
+        <img src="http://hitwebcounter.com/counter/counter.php?page=6479486&style=0025&nbdigits=5&type=ip&initCount=0" title="" Alt="" border="0">
+    </a>                                        <br />
+    <!-- hitwebcounter.com --><a href="http://www.hitwebcounter.com" title="Free Visits Counter"
+                                 target="_blank" style="font-family: Geneva, Arial, Helvetica;
+                                        font-size: 10px; color: #B3B7B3; text-decoration: underline ;">
+   
+    </a>   
+
+
     <footer>
         <p>&copy; @DateTime.Now.Year - Cars SoftUni</p>
     </footer>

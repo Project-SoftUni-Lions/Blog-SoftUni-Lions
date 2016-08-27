@@ -7,10 +7,10 @@
         <article class="post col-md-6">
             <h2><a href="/Ads/Details/@ads.Id">@MVCBog.Classes.Utils.CutText(ads.Title, 30)</a></h2>
             <div>
-                Postetd on <i>@ads.Date</i>
+                <i>Обявата е публикувана на: @ads.Date</i>
                 @if (ads.Author != null)
                 {
-                    @:by <i>@ads.Author.FullName (@ads.Author.UserName)</i>
+                    @:от <i>@ads.Author.FullName (@ads.Author.UserName)</i>
                     <p>@Html.Raw(@MVCBog.Classes.Utils.CutText(ads.Body))</p>
                 }
             </div>
