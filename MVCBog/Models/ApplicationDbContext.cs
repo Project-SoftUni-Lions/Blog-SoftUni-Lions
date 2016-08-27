@@ -20,6 +20,6 @@ namespace MVCBog.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.DbSet<MVCBog.Models.Post> Posts { get; set; }
+        public System.Data.Entity.DbSet<MVCBog.Models.Ads> Ads { get; set; }
     }
 }

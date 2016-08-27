@@ -154,12 +154,12 @@ namespace MVCBog.Migrations
         private void CreatePost(ApplicationDbContext context,
             string title, string body, DateTime date, string authorUsername)
         {
-            var post = new Post();
+            var post = new Ads();
             post.Title = title;
             post.Body = body;
             post.Date = date;
             post.Author = context.Users.Where(u => u.UserName == authorUsername).FirstOrDefault();
-            context.Posts.Add(post);
+            context.Ads.Add(post);
         }
     }
 }
