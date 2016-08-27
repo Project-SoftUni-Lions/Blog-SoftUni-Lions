@@ -58,7 +58,7 @@ namespace MVCBog.Controllers
                 ads.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 db.Ads.Add(ads);
                 db.SaveChanges();
-                this.AddNotification("Post created", NotificationType.SUCCESS);
+                this.AddNotification("Обявата е публикувана успешно", NotificationType.SUCCESS);
                 return RedirectToAction("Index");
             }
 
@@ -97,7 +97,7 @@ namespace MVCBog.Controllers
             {
                 db.Entry(ads).State = EntityState.Modified;
                 db.SaveChanges();
-                this.AddNotification("Post edited", NotificationType.SUCCESS);
+                this.AddNotification("Обявата е редактирана", NotificationType.SUCCESS);
                 return RedirectToAction("Index");
             }
             return View(ads);
@@ -128,7 +128,7 @@ namespace MVCBog.Controllers
             Ads ads = db.Ads.Find(id);
             db.Ads.Remove(ads);
             db.SaveChanges();
-            this.AddNotification("Post deleted", NotificationType.SUCCESS);
+            this.AddNotification("Обявата беше изтрита", NotificationType.SUCCESS);
             return RedirectToAction("Index");
         }
 
