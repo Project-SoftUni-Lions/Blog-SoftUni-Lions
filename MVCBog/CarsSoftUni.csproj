@@ -202,7 +202,6 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\AdsController.cs" />
     <Compile Include="Controllers\PollController.cs" />
-    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Extensions\NotificationExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -282,8 +281,8 @@
     <Content Include="Views\Shared\_Notifications.cshtml" />
     <Content Include="Views\Aboutus\index.cshtml" />
     <Content Include="Views\Aboutus\Contacts.cshtml" />
-    <Content Include="Views\Search\index.cshtml" />
     <Content Include="Views\Poll\index.cshtml" />
+    <Content Include="Views\Ads\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
