@@ -1,16 +1,20 @@
 ﻿@{ViewBag.Title = "Home";}
 @model  List<MVCBog.Models.Ads>
+<div class="jumbotron">
+    <h1>Cars SoftUni</h1>
+    <p class="lead">Cars SoftUni e компания, лидер на пазара на продажба на автомобили в България и Източна Европа.</p>
+    <p><a href="/Aboutus" class="btn btn-primary btn-lg">Виж повече за нас тук &raquo;</a></p>
+</div>
 @foreach (var ads in Model)
-
-{
+ {
     <section class="row">
-        <article class="post col-md-6">
+        <article class="post col-md-12">
             <h2><a href="/Ads/Details/@ads.Id">@MVCBog.Classes.Utils.CutText(ads.Title, 30)</a></h2>
             <div>
-                Postetd on <i>@ads.Date</i>
+                <i>Обявата е публикувана на: @ads.Date</i>
                 @if (ads.Author != null)
                 {
-                    @:by <i>@ads.Author.FullName (@ads.Author.UserName)</i>
+                    @:от <i>@ads.Author.FullName (@ads.Author.UserName)</i>
                     <p>@Html.Raw(@MVCBog.Classes.Utils.CutText(ads.Body))</p>
                 }
             </div>

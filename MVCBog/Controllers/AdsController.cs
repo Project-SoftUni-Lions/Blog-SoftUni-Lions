@@ -22,6 +22,19 @@ namespace MVCBog.Controllers
             return View(db.Ads.Include(p=>p.Author).ToList());
         }
 
+        public ActionResult Search(string searchString)
+        {
+            var ads = from m in db.Ads
+                      select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                ads = ads.Where(s => s.Title.Contains(searchString));
+            }
+
+            return View(ads);
+        }
+
         // GET: Posts/Details/5
         public ActionResult Details(int? id)
         {
