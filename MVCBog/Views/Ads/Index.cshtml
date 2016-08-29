@@ -47,7 +47,7 @@
             <td>
                 @if (item.Author == null)
                 {
-                    <i>No Author</i>
+                    <i>Няма автор</i>
                 }
                 @Html.DisplayFor(modelItem => item.Author.FullName)
             </td>
@@ -62,7 +62,7 @@
             <td>
                 @if (item.Author.PhoneNumber == null)
                 {
-                    <i>No PhoneNumber</i>
+                    <i>Няма телефон</i>
                 }
                 @Html.DisplayFor(modelItem => item.Author.PhoneNumber)
             </td>

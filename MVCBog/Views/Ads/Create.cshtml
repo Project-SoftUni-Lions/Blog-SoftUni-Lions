@@ -22,10 +22,29 @@
         <div class="form-group">
             @*@Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
-                <dt>Текст на обявата</dt> @Html.EditorFor(model => model.Body, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Body, "", new { @class = "text-danger" })
+                <dt>Текст на обявата</dt> @Html.EditorFor(model => model.Body, new {htmlAttributes = new {@class = "form-control"}})
+                @Html.ValidationMessageFor(model => model.Body, "", new {@class = "text-danger"})
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+        <div class="editor-label">
+                <b>Снимка</b>
+                @*@Html.LabelFor(model => model.ImagePath)*@
+            </div>
+            <div class="editor-field">
+                <input id="ImagePath" title="Upload a product image"
+                       type="file" name="file" />
+            </div>
+            <p><input type="submit" value="Качи снимката" /></p>
+       
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Публикувай" class="btn btn-primary" />
