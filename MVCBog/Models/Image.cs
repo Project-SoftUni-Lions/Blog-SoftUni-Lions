@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNet.Identity;
-using Microsoft.Owin.Security;
+using System.Linq;
+using System.Web;
 
 namespace MVCBog.Models
-
 {
-    
     public class Image
     {
-        public int ID { get; set; }
-        public string ImagePath { get; set; }
+
+        [Key]
+        public int Id { get; set; }
+
+        public byte[] BrandImage { get; set; }
     }
 }
