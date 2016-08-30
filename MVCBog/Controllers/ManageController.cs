@@ -123,7 +123,7 @@ namespace MVCBog.Controllers
                 var message = new IdentityMessage
                 {
                     Destination = model.Number,
-                    Body = "Your security code is: " + code
+                    Body = "Вашият код за сигурност е: " + code
                 };
                 await UserManager.SmsService.SendAsync(message);
             }

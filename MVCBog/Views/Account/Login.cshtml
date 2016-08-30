@@ -18,14 +18,16 @@
                     @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
                     <div class="col-md-10">
                         @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        <span class="field-validation-error text-danger" data-valmsg-replace="true">Полето е задължително</span>
+                        @*@Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })*@
                     </div>
                 </div>
                 <div class="form-group">
                     @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
                     <div class="col-md-10">
                         @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        <span class="field-validation-error text-danger" data-valmsg-replace="true">Полето е задължително</span>
+                        @*@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })*@
                     </div>
                 </div>
                 <div class="form-group">
