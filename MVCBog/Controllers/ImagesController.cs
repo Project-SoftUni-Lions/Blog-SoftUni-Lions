@@ -23,13 +23,7 @@ namespace MVCBog.Controllers
 
         }
 
-        public ActionResult AddImage()
-        {
-            Image b1 = new Image();
 
-            return View(b1);
-
-        }
 
         [HttpPost]
         public ActionResult AddImage(Image model, HttpPostedFileBase image1)

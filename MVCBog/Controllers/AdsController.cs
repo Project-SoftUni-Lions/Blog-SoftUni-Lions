@@ -64,8 +64,17 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Body")] Ads ads)
+        public ActionResult Create([Bind(Include = "Id,Title,Body")] Ads ads, Image model, HttpPostedFileBase image1)
         {
+
+            if (image1 != null)
+            {
+                model.BrandImage = new byte[image1.ContentLength];
+                image1.InputStream.Read(model.BrandImage, 0, image1.ContentLength);
+                db.Img.Add(model);
+                db.SaveChanges();
+            }
+
             if (ModelState.IsValid)
             {
                 ads.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
@@ -76,6 +85,9 @@ namespace MVCBog.Controllers
             }
 
             return View(ads);
+
+      
+           
         }
 
         // GET: Posts/Edit/5
