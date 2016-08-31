@@ -122,15 +122,23 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date")] Ads ads)
+        public ActionResult Edit([Bind(Include = "Id,Title,Body,Price,Contacts")] Ads ads, HttpPostedFileBase image1)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(ads).State = EntityState.Modified;
-                db.SaveChanges();
+               
                 this.AddNotification("Обявата е редактирана", NotificationType.SUCCESS);
                 return RedirectToAction("Index");
             }
+            if (image1 != null)
+            {
+                ads.UplImage = new byte[image1.ContentLength];
+                image1.InputStream.Read(ads.UplImage, 0, image1.ContentLength);
+
+
+            }
+            db.SaveChanges();
             return View(ads);
         }
 

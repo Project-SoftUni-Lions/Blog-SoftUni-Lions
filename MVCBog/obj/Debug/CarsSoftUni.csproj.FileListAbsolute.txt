@@ -732,7 +732,6 @@ C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.Mig
 C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\CarsSoftUni.csproj.GenerateResource.Cache
 C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.dll
 C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.pdb
-C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\CarsSoftUni.csprojResolveAssemblyReference.cache
 C:\Users\Martin\Desktop\Promeni 30.08.2016_Toni & Rado\Blog-SoftUni-Lions-master (1)\Blog-SoftUni-Lions-master\MVCBog\bin\ApplicationInsights.config
 C:\Users\Martin\Desktop\Promeni 30.08.2016_Toni & Rado\Blog-SoftUni-Lions-master (1)\Blog-SoftUni-Lions-master\MVCBog\bin\roslyn\csc.exe
 C:\Users\Martin\Desktop\Promeni 30.08.2016_Toni & Rado\Blog-SoftUni-Lions-master (1)\Blog-SoftUni-Lions-master\MVCBog\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
