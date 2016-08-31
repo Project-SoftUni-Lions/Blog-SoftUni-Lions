@@ -9,93 +9,84 @@
 <p>
     @Html.ActionLink("Публикувай нова обява", "Create")
 </p>
-
-
 @foreach (var item in Model)
 {
-    <table class="table">
-        <tr>
+<table cellpadding="0" cellspacing="0" class="table">
+    
+    <tr>
+        <td align="center" rowspan="6" width="100">
+            @if (item.UplImage != null)
+            {
+                var base64 = Convert.ToBase64String(item.UplImage);
+                var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+                <img src="@imgsrc" style="max-width: 300px; max-height:300px" />
+            }
+            else
+            {
+                <img src="http://vignette1.wikia.nocookie.net/superfriends/images/a/a5/No_Photo_Available.jpg/revision/latest?cb=20090329133959" style="max-width: 300px; max-height:300px" />
+            }
 
-            <th><h4><b>@Html.DisplayFor(modelItem => item.Title)</b></h4></th>
-        </tr>
-        <tr>
-            <th>
-                Заглавие
-                @*@Html.DisplayNameFor(model => model.Title)*@
-            </th>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-        </tr>
-        <tr>
-            <th>
-                Текст на обявата
-                @*@Html.DisplayNameFor(model => model.Body)*@
-            </th>
-            <td>
-                @MVCBog.Classes.Utils.CutText(item.Body)
-            </td>
-        </tr>
+        </td>
+        @*<td align="center" width="200">Заглавие</td>*@
+        <th>Заглавие</th>
+        <td align="center" width="200">@Html.DisplayFor(modelItem => item.Title)</td>
+    </tr>
 
-        <tr>
-
-
-            <th>
-                Автор
-                @*@Html.DisplayNameFor(model => model.Author.FullName)*@
-            </th>
-            <td>
-                @if (item.Author == null)
+    <tr>
+        @*<td align="CENTER">Row 2</td>*@
+        <th>Текст на обявата</th>
+        <td align="CENTER">@MVCBog.Classes.Utils.CutText(item.Body, 150)</td>
+    </tr>
+    <tr>
+        @*<td align="CENTER">Row 2</td>*@
+        <th>Цена</th>
+        <td align="CENTER">0.00 лв.</td>
+    </tr>
+    <tr>
+        @*<td align="center">Row 3</td>*@
+        <th>Автор</th>
+        <td align="center">@if (item.Author == null)
                 {
-                    <i>Няма автор</i>
-                }
-                @Html.DisplayFor(modelItem => item.Author.FullName)
-            </td>
-
-        </tr>
-
-        <tr>
-            <th>
-                Телефон
-                @*@Html.DisplayNameFor(model => model.Author.PhoneNumber)*@
-            </th>
-            <td>
-                @if (item.Author.PhoneNumber == null)
-                {
-                    <i>Няма телефон</i>
-                }
+            <i>Няма автор</i>
+        }
+        @Html.DisplayFor(modelItem => item.Author.FullName)</td>
+        
+    </tr>
+    <tr>
+        @*<td align="center">Row 3</td>*@
+        <th>Телефон</th>
+        <td align="center">
+            @if (item.Author.PhoneNumber == null)
+            {
+                <i>Няма телефон</i>
+            }
+            else
+            {
                 @Html.DisplayFor(modelItem => item.Author.PhoneNumber)
-            </td>
-        </tr>
-        @*<th>
-                @Html.DisplayNameFor(model => model.CommentsCount)
-            </th>*@
-        <tr>
-            <th>
-                Дата
-                @*@Html.DisplayNameFor(model => model.Date)*@
-            </th>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-
-        </tr>
-
-
-        <tr>
-
-            <td>
-                @if (User.IsInRole("Administrators"))
-                {
-                    @Html.ActionLink("Редактирай", "Edit", new { id = item.Id }) @:|
             }
-                @Html.ActionLink("Виж повече", "Details", new { id = item.Id })
-                @if (User.IsInRole("Administrators"))
-                {
-                    @:| @Html.ActionLink("Изтрий", "Delete", new { id = item.Id })
-            }
-            </td>
+        </td>
+    </tr>
+    <tr>
+        @*<td align="center">Row 3</td>*@
+        <th>Дата</th>
+        <td align="center">@Html.DisplayFor(modelItem => item.Date)</td>
 
-        </tr>
-    </table>
+    </tr>
+
+    <tr>
+        <th></th>
+        <td align="center">
+            @if (User.IsInRole("Administrators"))
+                {
+                @Html.ActionLink("Редактирай", "Edit", new { id = item.Id }) @:|
+            }
+            @Html.ActionLink("Виж повече", "Details", new { id = item.Id })
+            @if (User.IsInRole("Administrators"))
+                {
+                @:| @Html.ActionLink("Изтрий", "Delete", new { id = item.Id })
+            }
+        </td>
+    </tr>
+</table>
 }
+
