@@ -19,7 +19,7 @@
             {
                 var base64 = Convert.ToBase64String(item.UplImage);
                 var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
-                <img src="@imgsrc" style="max-width: 300px; max-height:300px" />
+                <img src="@imgsrc" style="width: 300px; height:200px" />
             }
             else
             {
@@ -35,13 +35,16 @@
     <tr>
         @*<td align="CENTER">Row 2</td>*@
         <th>Текст на обявата</th>
-        <td align="CENTER">@MVCBog.Classes.Utils.CutText(item.Body, 150)</td>
+        <td align="CENTER">@MVCBog.Classes.Utils.CutText(item.Body, 100)</td>
     </tr>
     <tr>
         @*<td align="CENTER">Row 2</td>*@
         <th>Цена</th>
-        <td align="CENTER">0.00 лв.</td>
+        <td align="CENTER">
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
     </tr>
+
     <tr>
         @*<td align="center">Row 3</td>*@
         <th>Автор</th>
@@ -54,15 +57,15 @@
     </tr>
     <tr>
         @*<td align="center">Row 3</td>*@
-        <th>Телефон</th>
+        <th>За връзка</th>
         <td align="center">
-            @if (item.Author.PhoneNumber == null)
+            @if (item.Contacts == null)
             {
-                <i>Няма телефон</i>
+                <i>Няма контакти</i>
             }
             else
             {
-                @Html.DisplayFor(modelItem => item.Author.PhoneNumber)
+                @Html.DisplayFor(modelItem => item.Contacts)
             }
         </td>
     </tr>

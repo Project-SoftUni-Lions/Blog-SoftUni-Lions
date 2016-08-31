@@ -67,7 +67,7 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Body")] Ads ads,  HttpPostedFileBase image1)
+        public ActionResult Create([Bind(Include = "Id,Title,Body,Price,Contacts")] Ads ads,  HttpPostedFileBase image1)
         {
 
 
