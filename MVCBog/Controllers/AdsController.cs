@@ -26,6 +26,7 @@ namespace MVCBog.Controllers
 
         public ActionResult Search(string searchString)
         {
+
             var ads = from m in db.Ads
                       select m;
 
@@ -122,7 +123,7 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date")] Ads ads)
+        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date,Contacts,Price")] Ads ads)
         {
             if (ModelState.IsValid)
             {

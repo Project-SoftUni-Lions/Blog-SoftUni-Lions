@@ -48,11 +48,9 @@
     <tr>
         @*<td align="center">Row 3</td>*@
         <th>Автор</th>
-        <td align="center">@if (item.Author == null)
-                {
-            <i>Няма автор</i>
-        }
-        @Html.DisplayFor(modelItem => item.Author.FullName)</td>
+        <td align="center">
+
+        @Html.DisplayFor(modelItem => item.Author.UserName)</td>
         
     </tr>
     <tr>
