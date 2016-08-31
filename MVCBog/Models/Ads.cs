@@ -28,5 +28,8 @@ namespace MVCBog.Models
         public ApplicationUser Author { get; set; }
 
         public int? CommentsCount { get; set; }
+
+       
+        public byte[] UplImage { get; set; }
     }
 }
