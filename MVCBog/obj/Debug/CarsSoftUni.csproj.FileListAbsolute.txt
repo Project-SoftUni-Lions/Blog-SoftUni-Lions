@@ -732,3 +732,4 @@ C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.Mig
 C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\CarsSoftUni.csproj.GenerateResource.Cache
 C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.dll
 C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.pdb
+C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\CarsSoftUni.csprojResolveAssemblyReference.cache

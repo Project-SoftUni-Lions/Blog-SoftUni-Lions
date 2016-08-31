@@ -15,12 +15,17 @@
     
     <tr>
         <td align="center" rowspan="6" width="100">
-            @{ 
+            @if (item.UplImage != null)
+            {
                 var base64 = Convert.ToBase64String(item.UplImage);
                 var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
-
+                <img src="@imgsrc" style="max-width: 300px; max-height:300px" />
             }
-            <img src="@imgsrc" style="max-width: 300px; max-height:300px" />
+            else
+            {
+                <img src="http://vignette1.wikia.nocookie.net/superfriends/images/a/a5/No_Photo_Available.jpg/revision/latest?cb=20090329133959" style="max-width: 300px; max-height:300px" />
+            }
+
         </td>
         @*<td align="center" width="200">Заглавие</td>*@
         <th>Заглавие</th>
