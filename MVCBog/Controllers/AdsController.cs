@@ -18,10 +18,13 @@ namespace MVCBog.Controllers
         // GET: Posts
         public ActionResult Index()
         {
-            var ads = db.Ads.Include(p => p.Author).ToList();
-            var item = (from d in db.Ads
-                        select d).ToList();
-            return View(db.Ads.Include(p=>p.Author).ToList());
+            //var ads = db.Ads.Include(p => p.Author).ToList();
+            //var item = (from d in db.Ads
+            //            select d).ToList();
+            //return View(db.Ads.Include(p=>p.Author).ToList());
+            var posts = db.Ads
+               .OrderByDescending(p => p.Date);
+            return View(posts.ToList());
         }
 
         public ActionResult Search(string searchString)
@@ -31,10 +34,10 @@ namespace MVCBog.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                ads = ads.Where(s => s.Title.Contains(searchString));
+                ads = ads.Where(s => s.Title.Contains(searchString)).OrderByDescending(p => p.Date); 
             }
 
-            return View(ads);
+            return View(ads.ToList());
         }
 
         // GET: Posts/Details/5
@@ -67,7 +70,7 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Body")] Ads ads,  HttpPostedFileBase image1)
+        public ActionResult Create([Bind(Include = "Id,Title,Body,Price,Contacts")] Ads ads,  HttpPostedFileBase image1)
         {
 
 
