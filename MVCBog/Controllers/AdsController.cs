@@ -18,13 +18,10 @@ namespace MVCBog.Controllers
         // GET: Posts
         public ActionResult Index()
         {
-            //var ads = db.Ads.Include(p => p.Author).ToList();
-            //var item = (from d in db.Ads
-            //            select d).ToList();
-            //return View(db.Ads.Include(p=>p.Author).ToList());
-            var posts = db.Ads
-               .OrderByDescending(p => p.Date);
-            return View(posts.ToList());
+            var ads = db.Ads.Include(p => p.Author).ToList();
+            var item = (from d in db.Ads
+                        select d).ToList();
+            return View(db.Ads.Include(p=>p.Author).ToList());
         }
 
         public ActionResult Search(string searchString)
@@ -34,10 +31,10 @@ namespace MVCBog.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                ads = ads.Where(s => s.Title.Contains(searchString)).OrderByDescending(p => p.Date); 
+                ads = ads.Where(s => s.Title.Contains(searchString));
             }
 
-            return View(ads.ToList());
+            return View(ads);
         }
 
         // GET: Posts/Details/5
