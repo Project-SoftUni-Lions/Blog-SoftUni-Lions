@@ -816,4 +816,3 @@ C:\Users\Martin\Desktop\Promeni 30.08.2016_Toni & Rado\Blog-SoftUni-Lions-master
 C:\Users\Martin\Desktop\Promeni 30.08.2016_Toni & Rado\Blog-SoftUni-Lions-master (1)\Blog-SoftUni-Lions-master\MVCBog\obj\Debug\MVCBog.dll
 C:\Users\Martin\Desktop\Promeni 30.08.2016_Toni & Rado\Blog-SoftUni-Lions-master (1)\Blog-SoftUni-Lions-master\MVCBog\obj\Debug\MVCBog.pdb
 C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\MVCBog.Migrations.ads1.resources
-C:\Users\Antonio\Documents\GitHub\Blog-SoftUni-Lions\MVCBog\obj\Debug\CarsSoftUni.csprojResolveAssemblyReference.cache

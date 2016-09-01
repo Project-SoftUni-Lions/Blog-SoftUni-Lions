@@ -32,9 +32,11 @@ namespace MVCBog.Models
        
         public byte[] UplImage { get; set; }
 
+        [Required]
         [StringLength(20)]
         public string Price { get; set; }
 
+        [Required]
         [StringLength(100)]
         public string Contacts { get; set; }
     }

@@ -19,6 +19,7 @@ namespace MVCBog.Controllers
         public ActionResult Index()
         {
             var ads = db.Ads.Include(p => p.Author).ToList();
+           
             var item = (from d in db.Ads
                         select d).ToList();
             return View(db.Ads.Include(p=>p.Author).ToList());
