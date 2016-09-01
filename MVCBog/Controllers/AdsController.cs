@@ -18,12 +18,13 @@ namespace MVCBog.Controllers
         // GET: Posts
         public ActionResult Index()
         {
-            //var ads = db.Ads.Include(p => p.Author).ToList();
+            var ads = db.Ads.Include(p => p.Author).ToList();
+
             //var item = (from d in db.Ads
             //            select d).ToList();
             //return View(db.Ads.Include(p=>p.Author).ToList());
             var posts = db.Ads
-              .OrderByDescending(p => p.Date);
+             .OrderByDescending(p => p.Date);
             return View(posts.ToList());
         }
 
@@ -131,6 +132,7 @@ namespace MVCBog.Controllers
             if (ModelState.IsValid)
             {
                 db.Entry(ads).State = EntityState.Modified;
+                db.Entry(ads).Property("UplImage").IsModified = false;
                 db.SaveChanges();
                 this.AddNotification("Обявата е редактирана", NotificationType.SUCCESS);
                 return RedirectToAction("Index");
