@@ -128,6 +128,7 @@ namespace MVCBog.Controllers
             if (ModelState.IsValid)
             {
                 db.Entry(ads).State = EntityState.Modified;
+                db.Entry(ads).Property("UplImage").IsModified = false;
                 db.SaveChanges();
                 this.AddNotification("Обявата е редактирана", NotificationType.SUCCESS);
                 return RedirectToAction("Index");
