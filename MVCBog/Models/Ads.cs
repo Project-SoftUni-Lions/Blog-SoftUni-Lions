@@ -28,16 +28,7 @@ namespace MVCBog.Models
         public ApplicationUser Author { get; set; }
 
         public int? CommentsCount { get; set; }
-
-       
-        public byte[] UplImage { get; set; }
-
-        [Required]
-        [StringLength(20)]
-        public string Price { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string Contacts { get; set; }
+         
+        public int? PhoneNumber { get; set; }
     }
 }

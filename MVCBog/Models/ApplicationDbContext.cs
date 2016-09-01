@@ -21,6 +21,7 @@ namespace MVCBog.Models
         }
 
         public System.Data.Entity.DbSet<MVCBog.Models.Ads> Ads { get; set; }
-        public System.Data.Entity.DbSet<MVCBog.Models.Image> Img { get; set; }
+        public System.Data.Entity.DbSet<MVCBog.Models.PollModels> Poll { get; set; }
+        
     }
 }

@@ -1,4 +1,4 @@
-﻿@model MVCBog.Models.Ads
+﻿@model MVCBog.Models.ViewTwoModels
 
 @{
     ViewBag.Title = "Направи обява";
@@ -16,7 +16,7 @@
             <div class="form-group">
                 @*@Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })*@
                 <div class="col-md-10">
-                    <dt>Заглавие</dt> @Html.EditorFor(model => model.Title, new {htmlAttributes = new {@class = "form-control"}})
+                    <dt>Заглавие</dt> @Html.EditorFor(model => model.Ads.Title, new {htmlAttributes = new {@class = "form-control"}})
                     <span class="field-validation-error text-danger" data-valmsg-replace="true">Полето е задължително</span>
                 </div>
             </div>
@@ -24,33 +24,25 @@
             <div class="form-group">
                 @*@Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })*@
                 <div class="col-md-10">
-                    <dt>Текст на обявата</dt> @Html.EditorFor(model => model.Body, new {htmlAttributes = new {@class = "form-control"}})
-                    @*@Html.ValidationMessageFor(model => model.Ads.Body, "", new {@class = "text-danger"})*@
-                    <span class="field-validation-error text-danger" data-valmsg-replace="true">Полето е задължително</span>
-                </div>
-            </div>
-            <div class="form-group">
-                @*@Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })*@
-                <div class="col-md-10">
-                    <dt>Цена</dt> @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
-                    @*@Html.ValidationMessageFor(model => model.Ads.Body, "", new {@class = "text-danger"})*@
-                    <span class="field-validation-error text-danger" data-valmsg-replace="true">Полето е задължително</span>
-                </div>
-            </div>
-            <div class="form-group">
-                @*@Html.LabelFor(model => model.Body, htmlAttributes: new { @class = "control-label col-md-2" })*@
-                <div class="col-md-10">
-                    <dt>За връзка</dt> @Html.EditorFor(model => model.Contacts, new { htmlAttributes = new { @class = "form-control" } })
+                    <dt>Текст на обявата</dt> @Html.EditorFor(model => model.Ads.Body, new {htmlAttributes = new {@class = "form-control"}})
                     @*@Html.ValidationMessageFor(model => model.Ads.Body, "", new {@class = "text-danger"})*@
                     <span class="field-validation-error text-danger" data-valmsg-replace="true">Полето е задължително</span>
                 </div>
             </div>
 
+            <div class="form-group">
+                @*@Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })*@
+                <div class="col-md-10">
+                    <dt>Телефон</dt> @Html.EditorFor(model => model.Ads.PhoneNumber, new { htmlAttributes = new { @class = "form-control" } })
+                    
+                </div>
+            </div>
+
+          
             <div class="form-group">
                 @*@Html.LabelFor(model => model.Image.BrandImage, htmlAttributes: new { @class = "control-label col-md-2" })*@
                 <div class="col-md-10">
                     <dt>Качи снимка</dt> <input type="file" name="image1" id="image1"/>
-                   
                 </div>
             </div>
 

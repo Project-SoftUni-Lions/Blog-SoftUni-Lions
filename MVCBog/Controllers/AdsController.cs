@@ -19,27 +19,20 @@ namespace MVCBog.Controllers
         public ActionResult Index()
         {
             var ads = db.Ads.Include(p => p.Author).ToList();
-
-            //var item = (from d in db.Ads
-            //            select d).ToList();
-            //return View(db.Ads.Include(p=>p.Author).ToList());
-            var posts = db.Ads
-             .OrderByDescending(p => p.Date);
-            return View(posts.ToList());
+            return View(db.Ads.Include(p=>p.Author).ToList());
         }
 
         public ActionResult Search(string searchString)
         {
-
             var ads = from m in db.Ads
                       select m;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                ads = ads.Where(s => s.Title.Contains(searchString)).OrderByDescending(p => p.Date);
+                ads = ads.Where(s => s.Title.Contains(searchString));
             }
 
-            return View(ads.ToList());
+            return View(ads);
         }
 
         // GET: Posts/Details/5
@@ -61,8 +54,7 @@ namespace MVCBog.Controllers
         [Authorize]
         public ActionResult Create()
         {
-            Ads b1 = new Ads();
-            return View(b1);
+            return View();
         }
 
         // POST: Posts/Create
@@ -72,30 +64,28 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Title,Body,Price,Contacts")] Ads ads,  HttpPostedFileBase image1)
+        public ActionResult Create([Bind(Include = "Id,Title,Body,PhoneNumber")] Ads ads, PollModels model, HttpPostedFileBase image1)
         {
-
-
-            if (ModelState.IsValid)
-            {
-                
-                ads.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
-       
-                this.AddNotification("Обявата е публикувана успешно", NotificationType.SUCCESS);
-                //return RedirectToAction("Index");
-            }
 
             if (image1 != null)
             {
-                ads.UplImage = new byte[image1.ContentLength];
-                image1.InputStream.Read(ads.UplImage, 0, image1.ContentLength);
-
-
+                model.BrandImage = new byte[image1.ContentLength];
+                image1.InputStream.Read(model.BrandImage, 0, image1.ContentLength);
+                db.Img.Add(model);
+                db.SaveChanges();
             }
-            db.Ads.Add(ads);
-            db.SaveChanges();
 
-            return View(ads);
+            if (ModelState.IsValid)
+            {
+                ads.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+                db.Ads.Add(ads);
+                db.SaveChanges();
+                this.AddNotification("Обявата е публикувана успешно", NotificationType.SUCCESS);
+                return RedirectToAction("Index");
+            }
+           
+
+            return View();
 
       
            
@@ -127,12 +117,11 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date,Contacts,Price")] Ads ads)
+        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date,PhoneNumber")] Ads ads)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(ads).State = EntityState.Modified;
-                db.Entry(ads).Property("UplImage").IsModified = false;
                 db.SaveChanges();
                 this.AddNotification("Обявата е редактирана", NotificationType.SUCCESS);
                 return RedirectToAction("Index");

@@ -9,7 +9,7 @@ namespace MVCBog.Models
     {
         public Ads Ads { get; set; }
 
-        public Image Image { get; set; }
+        public PollModels Image { get; set; }
 
     }
 }

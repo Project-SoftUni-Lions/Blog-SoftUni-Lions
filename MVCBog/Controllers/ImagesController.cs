@@ -26,7 +26,7 @@ namespace MVCBog.Controllers
 
 
         [HttpPost]
-        public ActionResult AddImage(Image model, HttpPostedFileBase image1)
+        public ActionResult AddImage(PollModels model, HttpPostedFileBase image1)
         {
             var db = new ApplicationDbContext();
             if (image1 != null)
