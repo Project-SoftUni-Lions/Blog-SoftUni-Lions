@@ -6,9 +6,7 @@
 
 <h2>Обяви</h2>
 
-<p>
-    @Html.ActionLink("Публикувай нова обява", "Create")
-</p>
+
 @foreach (var item in Model)
 {
 <table cellpadding="0" cellspacing="0" class="table">
@@ -48,11 +46,9 @@
     <tr>
         @*<td align="center">Row 3</td>*@
         <th>Автор</th>
-        <td align="center">@if (item.Author == null)
-                {
-            <i>Няма автор</i>
-        }
-        @Html.DisplayFor(modelItem => item.Author.FullName)</td>
+        <td align="center">
+
+        @Html.DisplayFor(modelItem => item.Author.UserName)</td>
         
     </tr>
     <tr>

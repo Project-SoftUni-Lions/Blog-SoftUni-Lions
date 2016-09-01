@@ -23,18 +23,19 @@ namespace MVCBog.Controllers
             //            select d).ToList();
             //return View(db.Ads.Include(p=>p.Author).ToList());
             var posts = db.Ads
-               .OrderByDescending(p => p.Date);
+              .OrderByDescending(p => p.Date);
             return View(posts.ToList());
         }
 
         public ActionResult Search(string searchString)
         {
+
             var ads = from m in db.Ads
                       select m;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                ads = ads.Where(s => s.Title.Contains(searchString)).OrderByDescending(p => p.Date); 
+                ads = ads.Where(s => s.Title.Contains(searchString)).OrderByDescending(p => p.Date);
             }
 
             return View(ads.ToList());
@@ -125,7 +126,7 @@ namespace MVCBog.Controllers
         [HttpPost]
         [ValidateInput(false)]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date")] Ads ads)
+        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date,Contacts,Price")] Ads ads)
         {
             if (ModelState.IsValid)
             {

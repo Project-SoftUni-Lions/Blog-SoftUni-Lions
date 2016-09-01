@@ -53,19 +53,12 @@
         <tr>
             @*<td align="CENTER">Row 2</td>*@
             <th>Цена</th>
-            <td align="CENTER">0.00 лв.</td>
+            <td align="CENTER">@Html.DisplayFor(modelItem => item.Price)</td>
         </tr>
         <tr>
-            @*<td align="center">Row 3</td>*@
-            <th>Автор</th>
-            <td align="center">
-                @if (item.Author == null)
-                {
-                    <i>Няма автор</i>
-                }
-                @Html.DisplayFor(modelItem => item.Author.FullName)
-            </td>
-
+            @*<td align="CENTER">Row 2</td>*@
+            <th>За връзка</th>
+            <td align="CENTER">@Html.DisplayFor(modelItem => item.Contacts)</td>
         </tr>
 
         <tr>
