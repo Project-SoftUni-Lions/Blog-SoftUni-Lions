@@ -6,7 +6,7 @@ using System.Web;
 
 namespace MVCBog.Models
 {
-    public class PollModels
+    public class Image
     {
 
         [Key]

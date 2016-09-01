@@ -207,9 +207,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608301743021_ads.cs" />
+    <Compile Include="Migrations\201608301743021_ads.Designer.cs">
+      <DependentUpon>201608301743021_ads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608311430305_ads1.cs" />
+    <Compile Include="Migrations\201608311430305_ads1.Designer.cs">
+      <DependentUpon>201608311430305_ads1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\PollModels.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -223,6 +230,9 @@
     <Content Include="Content\BMW.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Bugatti.jpg" />
+    <Content Include="Content\Ferrari.jpg" />
+    <Content Include="Content\lamborghini.jpg" />
     <Content Include="Content\Mercedes.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -291,7 +301,6 @@
     <Content Include="Views\Ads\Search.cshtml" />
     <Content Include="Views\Ads\Image.cshtml" />
     <Content Include="Views\Images\AddImage.cshtml" />
-    <Content Include="Views\Poll\Result.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -302,6 +311,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201608301743021_ads.resx">
+      <DependentUpon>201608301743021_ads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608311430305_ads1.resx">
+      <DependentUpon>201608311430305_ads1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
